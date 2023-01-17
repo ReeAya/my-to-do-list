@@ -21,10 +21,10 @@
     <title>My To Do List</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
+    <div class="container d-flex justify-content-center p-4 rounded-3">
+      <div class="row list">
         <div class="col-xs-12">
-          <h2>My To Do List</h2>
+          <h2 class="mb-4">My To Do List</h2>
           <div id="todo-list"></div>
           <form action="" id="create-task">
             <input
@@ -32,8 +32,11 @@
               name=""
               id="new-task-content"
               placeholder="New Task"
+              class="mt-5"
             />
-            <button>Create</button>
+            <button class="btn btn-sm rounded btn-primary mx-4 create-btn">
+              Create
+            </button>
           </form>
         </div>
       </div>
