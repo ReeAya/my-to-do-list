@@ -11,16 +11,16 @@ $(document).ready(function () {
         $("#todo-list").empty();
 
         response.tasks.forEach(function (task) {
-          $("#todo-list").append(
+         $("#todo-list").append(
             '<div class="row d-flex justify-content-between todo-row"><p class="col-xs-8 d-inline-block mb-4">' +
               task.content +
-              '</p><label><input class="display-inline-block mb-4" type="checkbox" class="mark-complete" data-id="' +
+              '</p><label><input type="checkbox" class="mb-4 mark-complete" data-id="' +
               task.id +
               '"' +
               (task.completed ? "checked" : "") +
-              '>Completed?</label><button class="btn btn-danger btn-sm rounded w-100 delete" data-id="' +
+              ">Completed?</label><button class='btn btn-danger btn-sm rounded w-100 delete' data-id='" +
               task.id +
-              '">Delete</button>'
+              "'>Delete</button>"
           );
         });
       },
